@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/account_site.css">
+</head>
+<body>
+	<main>
+	<div class="section-prices" style="margin-top: 200px;">
+  		<div class="container">
+  			<div class="row">
+  				<h1 style="color: white">НОВИНКИ</h1>
+  				<div class="col-lg-5">
+  					<div class="price-block">
+  						<img src="img/GPU.png" alt="" style="width: 180px; height: 180px; background: none; padding: none">
+  						<h3 style="color: white">Radeon Rx 580\8 GB(AFOX AFRX580-8192D5H3-V2)</h3>
+  					</div>
+  						<a class="buy" style="background-color: orange; border: none; color: white; border-radius: 30px; width: 78%; height: 43px; font-size: 23px; text-align: center; margin-top: 27px"  		 data-sb-product-name="Rx580/8gb"
+  data-sb-product-price="7000"
+  data-sb-product-quantity="1"
+  data-sb-product-img="img/GPU.png" 
+  href="#">В корзину</a>
+  		
+  	</div>
+  	<div class="col-lg-1 col-lg-offset-6">
+  		<a class="basket" style="background: none; border: none; margin-left: 15px; padding-top: 18px; position: absolute; z-index: 900;" href="#"></a>
+
+  		<div class="product__quantity"=2>2</div>
+
+  	</div>
+  </div>
+</div>
+</div>
+</main>
+
+
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+  
+<link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'price-block',
+				buttonAddToBasket: 'buy',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'basket',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: './img/basket.png',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: '',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
+
+  </body>
+</html>
